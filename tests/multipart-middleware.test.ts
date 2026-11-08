@@ -8,7 +8,7 @@ import type { PassThrough } from 'node:stream';
 import { Readable } from 'node:stream';
 import { text } from 'node:stream/consumers';
 import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
-import { useFunctionMock } from '@chubbyts/chubbyts-function-mock/dist/function-mock';
+import { useFunctionMock } from '@chubbyts/chubbyts-function-mock/function-mock';
 import { parse } from 'qs';
 import {
   createResponseFactory,

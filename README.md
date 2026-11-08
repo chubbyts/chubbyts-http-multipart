@@ -25,8 +25,8 @@ the request gets changed through the injected helpers only.
 ## Requirements
 
  * node: 22
- * [@chubbyts/chubbyts-dic-config-factory][6]: ^1.0.1
- * [@chubbyts/chubbyts-dic-types][4]: ^2.3.1
+ * [@chubbyts/chubbyts-dic-config-factory][6]: ^1.1.0
+ * [@chubbyts/chubbyts-dic-types][4]: ^2.4.0
  * [@chubbyts/chubbyts-http-types][2]: ^4.0.0
  * [busboy][3]: ^1.6.0
 
@@ -35,7 +35,7 @@ the request gets changed through the injected helpers only.
 Through [NPM](https://www.npmjs.com) as [@chubbyts/chubbyts-http-multipart][1].
 
 ```sh
-npm i @chubbyts/chubbyts-http-multipart@^3.0.0
+npm i @chubbyts/chubbyts-http-multipart@^3.1.0
 ```
 
 ## Usage
@@ -165,8 +165,8 @@ blue=/tmp/multipart-XXXXXX/...; filename=blue.png; mimeType=image/png&
 The package ships a service factory (an abstract factory built on [chubbyts-dic-config-factory][6]) for a [chubbyts-dic-config][5] (or any [chubbyts-dic-types][4] compatible) container within `@chubbyts/chubbyts-http-multipart/service-factory`, configured through `config.chubbyts.multipart` (optional, see the `limits` of [busboy][3]). The implementation of the types gets read from the service `serverRequestHelpers`, which has to be registered:
 
 ```ts
-import type { ConfigFactory } from '@chubbyts/chubbyts-dic-config/dist/dic-config';
-import { createContainerByConfigFactory } from '@chubbyts/chubbyts-dic-config/dist/dic-config';
+import type { ConfigFactory } from '@chubbyts/chubbyts-dic-config/dic-config';
+import { createContainerByConfigFactory } from '@chubbyts/chubbyts-dic-config/dic-config';
 import { createServerRequestHelpers } from '@chubbyts/chubbyts-http/message-helper';
 import type { MultipartConfig } from '@chubbyts/chubbyts-http-multipart/service-factory';
 import { multipartMiddlewareServiceFactory } from '@chubbyts/chubbyts-http-multipart/service-factory';

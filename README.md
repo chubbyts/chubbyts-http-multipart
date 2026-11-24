@@ -35,7 +35,7 @@ the request gets changed through the injected helpers only.
 Through [NPM](https://www.npmjs.com) as [@chubbyts/chubbyts-http-multipart][1].
 
 ```sh
-npm i @chubbyts/chubbyts-http-multipart@^3.1.0
+npm i @chubbyts/chubbyts-http-multipart@^3.1.1
 ```
 
 ## Usage
